@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SmartWatch</string>
+    <string name="gioiThieu">Giới thiệu</string>
+    <string name="gioiThieu2">VỀ CHÚNG TÔI</string>
+    <string name="lienHe">Kính gởi Quý khách hàng!</string>
+    <string name="lienHe1">Đầu tiên, đội ngũ Likewatch xin gởi lời tri ân sâu sắc đến quý khách hàng đã luôn đồng hành và tin tưởng chúng tôi trong suốt thời gian qua. Chính sự ủng hộ, yêu mến của quý khách đã giúp LikeWatch đạt đến những thành công như hôm nay và cũng là động lực để chúng tôi tiếp tục cố gắng trong tương lai.</string>
+    <string name="lienHe2">Chúng tôi hy vọng những sản phẩm từ LikeWatch sẽ đồng hành cùng quý khách hàng, chia sẻ trọn vẹn những khoảnh khắc hạnh phúc trong cuộc sống, thành công trong sự nghiệp cũng như tận hưởng mỗi giây phút thật ý nghĩa với người thân, gia đình.</string>
+    <string name="lienHe3">Bên cạnh con đường theo đuổi sự hoàn hảo, các thiếu sót là điều không thể tránh khỏi trong kinh doanh, nếu trong quá trình phục vụ có bất cứ điều gì làm phiền lòng, kính mong quý khách hàng thông cảm. Likewatch sẽ luôn chân thành lắng nghe ý kiến đóng góp của quý khách hàng để hoàn thiện dịch vụ, tăng sự gắn kết, và đem lại trải nghiệm mua sắm tốt nhất.</string>
+    <string name="lienHe4">Trân trọng.</string>
+    <string name="quen_mat_khau"><u>QUÊN MẬT KHẨU?</u></string>
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/draLayout_trangChinh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_trangChinh"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/holo_blue_dark"
+                app:title="Đăng ký">
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tinnhan" />
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Xác mình mã OTP"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nhập mã OTP đã nhận"
+                    android:textSize="14dp"/>
+
+                <LinearLayout
+                    android:layout_marginTop="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#FA0202"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_grade_24"/>
+
+                    <TextView
+                        android:id="@+id/textView_dangKy_nhanSDT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="(+84)  Số đt"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="6">
+
+                    <EditText
+                        android:id="@+id/editText_dangKy_OTP1"
+                        android:maxLength="1"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/editText_dangKy_OTP2"
+                        android:maxLength="1"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+                    <EditText
+                        android:id="@+id/editText_dangKy_OTP3"
+                        android:maxLength="1"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+                    <EditText
+                        android:id="@+id/editText_dangKy_OTP4"
+                        android:maxLength="1"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+                    <EditText
+                        android:id="@+id/editText_dangKy_OTP5"
+                        android:maxLength="1"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+                    <EditText
+                        android:id="@+id/editText_dangKy_OTP6"
+                        android:maxLength="1"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:inputType="number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_dangKy_xacNhanOTP"
+                    android:backgroundTint="#2196F3"
+                    android:background="@drawable/drawable_hinheclip"
+                    android:layout_marginTop="40dp"
+                    android:text="Xác Nhận OTP"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/naviView_trangChinh"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+
+            <ListView
+                android:id="@+id/listView_trangChinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>

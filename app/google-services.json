@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "938121224969",
+    "project_id": "otp-verification-774f6",
+    "storage_bucket": "otp-verification-774f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938121224969:android:fca8ffea7cb738014d29d8",
+        "android_client_info": {
+          "package_name": "com.example.smartwatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938121224969-c4jnv68gr1ini1of4m7ufqps4fdrduhn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.smartwatch",
+            "certificate_hash": "1fc19e9098ea7be9c2e30e7b55dc421f42c38620"
+          }
+        },
+        {
+          "client_id": "938121224969-ibq3gckb9sa8u07sc5vsml3hr50f5eqk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXo9fGyIRq0eSKLIMGs473Ett26c5xzC8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938121224969-ibq3gckb9sa8u07sc5vsml3hr50f5eqk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
