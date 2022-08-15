@@ -1,0 +1,464 @@
+{
+	"info": {
+		"_postman_id": "c96f8d17-86fe-463e-a90d-4e1dff2309e8",
+		"name": "WEBDAUGIA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "16029135"
+	},
+	"item": [
+		{
+			"name": "KhachHang",
+			"item": [
+				{
+					"name": "Sửa khách hàng",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ho\": \"Lý\",\r\n    \"ten\": \"Nam\",\r\n    \"email\": \"namnam@gmail.com\",\r\n    \"ngaysinh\": \"19-07-2003\",\r\n    \"diachi\": \"Hà Nội\",\r\n    \"sotien\": 200000,\r\n    \"sdt\": \"0963664935\",\r\n    \"matkhau\": \"abcd12\",\r\n    \"ngaydangky\": \"26-07-2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/khachhang/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Thêm Khách Hàng",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"0963645934\",\r\n    \"ho\": \"Lý\",\r\n    \"ten\": \"Nam\",\r\n    \"email\": \"Nam@gmail.com\",\r\n    \"ngaysinh\": \"23-09-1998\",\r\n    \"diachi\": \"Quảng Ngãi\",\r\n    \"sotien\": 0,\r\n    \"matkhau\": \"abcd12\",\r\n    \"ngaydangky\": \"2022-07-26\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/khachhang"
+					},
+					"response": []
+				},
+				{
+					"name": "DS Khách Hàng",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/dskhachhang"
+					},
+					"response": []
+				},
+				{
+					"name": "Xoá Khách Hàng",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[3]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/khachhang"
+					},
+					"response": []
+				},
+				{
+					"name": "Xem Khách Hàng",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/khachhang/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "NhanVien",
+			"item": [
+				{
+					"name": "Xoá Nhân Viên",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[1]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/nhanvien"
+					},
+					"response": []
+				},
+				{
+					"name": "DS Nhân Viên",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/dsnhanvien"
+					},
+					"response": []
+				},
+				{
+					"name": "Thêm Nhân Viên",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ho\":\"Nguyễn\",\r\n    \"ten\":\"Cường\",\r\n    \"sdt\":\"0963664935\",\r\n    \"email\":\"cuongqn235@gmail.com\",\r\n    \"diachi\":\"Quảng Ngãi\",\r\n    \"ngaysinh\":\"2020-09-09\",\r\n    \"taikhoan\":\"cuongqn235\",\r\n    \"matkhau\":\"tc123456\",\r\n    \"ngaydangky\":\"2022-09-09\",\r\n    \"chucvu\":\"Quản lí\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/nhanvien"
+					},
+					"response": []
+				},
+				{
+					"name": "Xem Nhân Viên",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/nhanvien/3"
+					},
+					"response": []
+				},
+				{
+					"name": "Sửa Nhân Viên",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ho\":\"Nguyễn\",\r\n    \"ten\":\"Cường\",\r\n    \"sdt\":\"0963664335\",\r\n    \"email\":\"cuongqn235@gmail.com\",\r\n    \"diachi\":\"Quảng Ngãi\",\r\n    \"ngaysinh\":\"23-06-2001\",\r\n    \"taikhoan\":\"cuongqn235\",\r\n    \"matkhau\":\"tc123456\",\r\n    \"ngaydangky\":\"26-07-2022\",\r\n    \"chucvu\":\"Nhân Viên\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/nhanvien/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SanPham",
+			"item": [
+				{
+					"name": "DS Sản Phẩm",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/dssanpham"
+					},
+					"response": []
+				},
+				{
+					"name": "Thêm Sản Phẩm",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tensp\":\"Bàn chải\",\r\n    \"soluong\":15,\r\n    \"chitiet\":\"Thun trơn\",\r\n    \"hinhanh\":\"abcd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/sanpham"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DauGia",
+			"item": [
+				{
+					"name": "Thêm đơn đấu giá",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ngaytao\": \"27-07-2022 10:30:32\",\r\n    \"giatoithieu\": 150000,\r\n    \"nhanvienid\": 1,\r\n    \"tensp\": \"Bàn chải\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/daugia"
+					},
+					"response": []
+				},
+				{
+					"name": "Xem CTDG",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/daugia/2"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CTDAUGIA",
+			"item": [
+				{
+					"name": "Xem CTDG theo id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/ctdaugia/3"
+					},
+					"response": []
+				},
+				{
+					"name": "Thêm CTDG",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"daugiaid\":2,\r\n    \"khachhangid\":\"0963645934\",\r\n    \"thoigian\":\"27-07-2022 10:30:40\",\r\n    \"giadau\":13000,\r\n    \"trangthai\":\"thắng\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/ctdaugia"
+					},
+					"response": []
+				},
+				{
+					"name": "Xem CTDG người thắng",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/ctdaugia"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Đơn đặt hàng",
+			"item": [
+				{
+					"name": "Xem đơn đặt hàng",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nhanvienid\":1,\r\n    \"tenncc\":\"Nhà Thuốc Nam Phương\",\r\n    \"ngaydat\":\"27-07-2022 11:48:30\",\r\n    \"trangthai\":\"Đang đặt\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/dondathang/4"
+					},
+					"response": []
+				},
+				{
+					"name": "Thêm Đơn Đặt Hàng",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nhanvienid\":1,\r\n    \"tenncc\":\"Nhà Thuốc Nam Phương\",\r\n    \"ngaydat\":\"27-07-2022 11:48:30\",\r\n    \"trangthai\":\"Đang đặt\",\r\n    \"listctddh\":[\r\n    {\r\n        \"sanphamid\":1,\r\n        \"soluong\":3,\r\n        \"donggia\":5000\r\n    },\r\n    {\r\n        \"sanphamid\":2,\r\n        \"soluong\":2,\r\n        \"donggia\":5000\r\n    }\r\n]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/dondathang"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CTDDH",
+			"item": [
+				{
+					"name": "Thêm CTDDH",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"dondathangid\":4,\r\n        \"sanphamid\":1,\r\n        \"soluong\":9,\r\n        \"donggia\":5000\r\n    },\r\n    {\r\n        \"dondathangid\":4,\r\n        \"sanphamid\":2,\r\n        \"soluong\":2,\r\n        \"donggia\":5000\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/ctddh/4"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Phiếu xuất",
+			"item": [
+				{
+					"name": "Thêm phiếu xuất",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nhanvienid\":1,\r\n    \"ngayxuat\":\"27-07-2022 11:48:33\",\r\n    \"trangthai\":\"Đã xuất\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/phieuxuat/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Xem phiếu xuất",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/phieuxuat/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Nạp tiền",
+			"item": [
+				{
+					"name": "Sửa nạp tiền",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nhanvienid\":1,\r\n    \"khachhangid\":\"0963645934\",\r\n    \"sotien\":30000,\r\n    \"ngaynap\":\"2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/naptien"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Chức vụ",
+			"item": [
+				{
+					"name": "thêm chức vụ",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"chucvu\":\"Trường phòng\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081//chucvu/"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tài khoản",
+			"item": [
+				{
+					"name": "Thêm tài khoản",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"taikhoan\":\"a\",\r\n    \"matkhau\":\"abcd\",\r\n    \"nhanvienid\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/taikhoan"
+					},
+					"response": []
+				},
+				{
+					"name": "Thay mật khẩu",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"taikhoan\":\"a\",\r\n    \"matkhau\":\"abcd\",\r\n    \"nhanvienid\":\"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/taikhoan"
+					},
+					"response": []
+				},
+				{
+					"name": "Kiểm tra tài khoản",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/taikhoan/a"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
